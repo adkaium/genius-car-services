@@ -1,0 +1,23 @@
+.services-title{
+    text-align: center;
+    color: blue;
+}
+
+.service-contianer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+button{
+    border: none;
+}
+@media only screen and (max-width: 600px) {
+    .service-contianer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width: 768px) {
+    .service-contianer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
